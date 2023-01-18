@@ -11,6 +11,7 @@ import {
   Button,
   HStack,
   VStack,
+  Text,
 
 } from '@chakra-ui/react'
 
@@ -29,20 +30,25 @@ const DrawerComp = () => {
 
   return (
     <>
-      <Button w={"50px"} variant={"ghost"} pos={"absolute"} top={2} left={-2} onClick={() => onOpen()}><CgMenuLeft/></Button>
+      <Button w={"50px"} variant={"ghost"} pos={"absolute"} top={2} left={-2} onClick={() => onOpen()}><CgMenuLeft /></Button>
 
       <Drawer placement={"left"} onClose={onClose} isOpen={isOpen} size={windowWidth > 600 ? "md" : "full"}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton  pos={"absolute"} top={"5"} right={"4"} />
+          <DrawerCloseButton pos={"absolute"} top={"5"} right={"4"} />
           <DrawerHeader color={"whatsapp.500"} fontSize={"3xl"} fontWeight={"bold"}
-          fontFamily={"Poppins"}>BitByte</DrawerHeader>
+            fontFamily={"Poppins"}>
+            <Link to={"/"} onClick={() => onClose()} >
+              BitByte
+            </Link>
+          </DrawerHeader>
           <DrawerBody fontWeight={"bold"} fontSize={"xl"}>
             <VStack gap={4} height={"100%"} justifyContent={"center"} textColor={"blackAlpha.800"}>
-              <Link to={"/explore"} onClick={() => onClose()}>Explore</Link>
-              <Link to={"/learn"} onClick={() => onClose()}>Learn</Link>
-              <Link to={"/blogs"} onClick={() => onClose()}>Blogs</Link>
-              <Link to={"/trade"} onClick={() => onClose()}>Trade</Link>
+            <Link to={"/"} onClick={() => onClose()}><Text fontWeight={"semibold"}>Home</Text></Link>
+              <Link to={"/explore"} onClick={() => onClose()}> <Text fontWeight={"semibold"}>Explore</Text></Link>
+              <Link to={"/learn"} onClick={() => onClose()}> <Text fontWeight={"semibold"}>Learn</Text></Link>
+              <Link to={"/blogs"} onClick={() => onClose()}> <Text fontWeight={"semibold"}>Blogs</Text></Link>
+              <Link to={"/trade"} onClick={() => onClose()}> <Text fontWeight={"semibold"}>Trade</Text></Link>
             </VStack>
           </DrawerBody>
           <DrawerFooter>
