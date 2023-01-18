@@ -13,7 +13,7 @@ const HeroSection = () => {
 
           <VStack p={[4, 0]}>
             <Heading fontSize={30} fontWeight={"semibold"} >Start developing your cryptocurrency portfolio today</Heading>
-            <VStack >
+            <VStack alignItems={"flex-start"} >
               <Heading fontSize={20} my={4} fontWeight={"medium"}>Here are a few advantages why you should go with BitByte.</Heading>
               <Box >
                 <HStack >
