@@ -42,7 +42,7 @@ const Explore = () => {
     <>
       <VStack p={[4, 8]} h={["40vh", "45vh"]} justifyContent={"center"} >
         <Heading color={"whatsapp.500"} mb={3} fontFamily={"Poppins"} textAlign={"center"}>Explore all the coins</Heading>
-        <InputGroup w={"300px"}>
+        <InputGroup maxW={"280px"} mx={"auto"} >
           <InputLeftElement
             pointerEvents='none'
             children={<SearchIcon color={"blackAlpha.500"} />}
@@ -50,10 +50,6 @@ const Explore = () => {
           <Input
             placeholder='search coins...'
             variant='filled'
-            style={{
-              marginBottom: "10px",
-              maxWidth: "70vw"
-            }}
             border={"1px solid transparent"}
             focusBorderColor='transparent'
             _placeholder={{ opacity: 0.5, color: 'gray.400' }}
@@ -68,7 +64,7 @@ const Explore = () => {
           {loading ? (<Loader height={"50vh"} width={"50vw"} />) : (
             <>
               <VStack gap={"6"}>
-                <div className="grid-parent heading">
+                <div className="grid-parent-heading">
                   <Box className='coin-image-heading' >Coin</Box>
                   <Box>Price</Box>
                   <Box className='pricechange-heading'>Change</Box>

@@ -5,13 +5,15 @@ import {
     Text,
     Button,
     StatArrow,
-    Stat
+    Stat,
+    Icon
 } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+import { AiFillRightCircle } from "react-icons/ai"
 
 const CurrencyBar = ({ image, price, priceChange, name, symbol, currencySymbol, priceChangePercent, id }) => {
     return (
-        <div className="grid-parent" >
+        <div className="grid-parent">
 
             <Image src={image} w={"12"} />
 
@@ -28,9 +30,7 @@ const CurrencyBar = ({ image, price, priceChange, name, symbol, currencySymbol, 
             </Stat>
             <Box>
                 <Link to={`/explore/${id}`}>
-                    <Button colorScheme={"whatsapp"}>
-                        Detailed View
-                    </Button>
+                    <Icon as={AiFillRightCircle} boxSize={7} color={"blackAlpha.400"} _hover={{ color: "#22c35e" }} />
                 </Link>
             </Box>
         </div>

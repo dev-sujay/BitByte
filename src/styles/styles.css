@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --primary-color: #12aa4a;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +19,12 @@ body {
     overflow-x: hidden;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 8px;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color:#cfcfcf;
+::-webkit-scrollbar-thumb {
+    background-color: #cfcfcf;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -30,13 +34,13 @@ body {
 
 
 
-.grid-parent{
+.grid-parent {
     display: grid;
-    grid-template-columns:  repeat(5, 140px);
+    grid-template-columns: repeat(5, 140px);
     margin: 1rem auto;
     align-items: center;
     justify-items: center;
-    grid-gap:1rem;
+    grid-gap: 1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 10px 0;
     padding-right: 10px;
@@ -45,21 +49,48 @@ body {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
 }
 
-.grid-parent.heading{
+.grid-parent:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.grid-parent-heading {
+    display: grid;
     grid-template-columns: 280px repeat(3, 140px);
+    margin: 1rem auto;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1rem;
+    padding: 10px 0;
+    padding-right: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #12aa4a;
+    color: var(--primary-color);
     box-shadow: none;
 }
 
-.grid-parent.heading>*{
-    background-color: rgb(228, 228, 228);
+
+
+.grid-parent-heading>* {
+    background-color: rgb(243, 243, 243);
     width: 100%;
     text-align: center;
-    margin: 1rem ;
+    margin: 1rem;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -68,17 +99,29 @@ body {
     padding: 5px;
 }
 
-.coindetails-second-bar{
+.coindetails-second-bar {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(283px, 1fr));
     row-gap: 1rem;
     column-gap: 1rem;
 }
 
-.css-qw72mr-Control2{
+.css-qw72mr-Control2 {
     display: flex;
 }
 
+.posibilities-section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+}
 
-
-
+.help-section-grid, .features-section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}

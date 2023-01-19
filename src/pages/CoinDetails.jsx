@@ -43,7 +43,7 @@ const CoinDetails = () => {
       mx={"auto"}
       my={"1rem"}>
 
-      {loading ? (<Loader height={"100vh"} width={"90vw"} />) : (
+      {loading ? (<Loader height={"100vh"} width={"100%"} />) : (
         <>
           <Stack
             boxShadow={"rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"} py={3}
