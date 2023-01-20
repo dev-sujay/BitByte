@@ -1,14 +1,14 @@
 import { Box, Container, Heading, VStack } from '@chakra-ui/react'
 import React from 'react'
-import nftImg from '../assets/nftimg.png'
-import cryptoScam from '../assets/crpto_scam.webp'
-import blockchainImg from '../assets/what_is_blockchain.jpg'
-import cryptoIndiaImg from '../assets/crypto_india.jpg'
-import proofOfWorkImg from '../assets/proof_of_work.jpg'
-import virtualLandImg from '../assets/virtual_land.avif'
-import daoImg from '../assets/dao.jpg'
-import metaimg from '../assets/meta.webp'
-import secureFromScam from '../assets/secure from scam.jpg'
+import nftImg from 'https://raw.githubusercontent.com/dev-sujay/BitByte/master/src/assets/nft.png'
+import cryptoScam from 'https://raw.githubusercontent.com/dev-sujay/BitByte/master/src/assets/crpto_scam.webp'
+import blockchainImg from 'https://raw.githubusercontent.com/dev-sujay/BitByte/master/src/assets/what_is_blockchain.jpg'
+import cryptoIndiaImg from 'https://raw.githubusercontent.com/dev-sujay/BitByte/master/src/assets/crypto_india.jpg'
+import proofOfWorkImg from 'https://raw.githubusercontent.com/dev-sujay/BitByte/master/src/assets/proof_of_work.jpg'
+import virtualLandImg from 'https://raw.githubusercontent.com/dev-sujay/BitByte/master/src/assets/virtual_land.avif'
+import daoImg from 'https://raw.githubusercontent.com/dev-sujay/BitByte/master/src/assets/dao.jpg'
+import metaimg from 'https://raw.githubusercontent.com/dev-sujay/BitByte/master/src/assets/meta.webp'
+import secureFromScam from 'https://raw.githubusercontent.com/dev-sujay/BitByte/master/src/assets/secure%20from%20scam.jpg'
 
 const Blogs = () => {
   return (
