@@ -13,10 +13,10 @@ const FreeBitcoinComp = () => {
                 <Link to={`/explore/bitcoin`}>
                     <Text textAlign={"center"}>0 trading fee on selected Bitcoin (BTC) spot trading pairs now <span style={{color:"#22c35e"}} >&gt;</span> </Text>
                 </Link>
-                <Link to={"/trade"} >
+                <Link to={"/explore"} >
                     <Text textAlign={"center"}>Lowest transactions fees &lt; 0.1 % <span style={{color:"#22c35e"}} >&gt;</span> </Text>
                 </Link>
-                <Link to={"/trade"} >
+                <Link to={"/explore/bitcoin"} >
                     <Button variant={"solid"} colorScheme={"whatsapp"} my={2}>Buy BTC for 0 Fee</Button>
                 </Link>
             </VStack>

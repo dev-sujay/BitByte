@@ -34,14 +34,24 @@ const Explore = () => {
 
   console.log(search);
 
-  if (error){
+  if (error) {
     return <ErrorComponent message={"There is a problem in fetching coins, please refresh the page or try after some time"} />
-  } 
+  }
 
   return (
     <>
-      <VStack p={[4, 8]} h={["40vh", "45vh"]} justifyContent={"center"} >
-        <Heading color={"whatsapp.500"} mb={3} fontFamily={"Poppins"} textAlign={"center"}>Explore all the coins</Heading>
+      <VStack 
+      p={[4, 8]} 
+      h={["40vh", "45vh"]} 
+      justifyContent={"center"} >
+
+        <Heading 
+        color={"whatsapp.500"} 
+        mb={3} fontFamily={"Poppins"} 
+        textAlign={"center"}>
+        Explore all the coins
+        </Heading>
+
         <InputGroup maxW={"280px"} mx={"auto"} >
           <InputLeftElement
             pointerEvents='none'

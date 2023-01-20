@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 
 const PosibilityCardComp = ({ img, heading, text, learnmorePageLink, flexdir }) => {
   return (
-    <Card w={"350px"} alignSelf={"stretch"} boxShadow={"2xl"} px={4} py={2} borderRadius={"10px"} transition={"all 0.3s"} _hover={{
+    <Card w={"350px"} 
+      alignSelf={"stretch"} boxShadow={"2xl"} px={4} py={2} borderRadius={"10px"} transition={"all 0.3s"} _hover={{
       transform: "scale(1.02)",
     }}>
       <CardBody >

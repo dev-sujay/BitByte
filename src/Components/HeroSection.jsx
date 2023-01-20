@@ -1,7 +1,7 @@
 import React from 'react'
 import heroImg from "../assets/cryptolibrary-header-crypto.png"
 import { BsCheckCircleFill } from "react-icons/bs"
-import { Box, Container, Heading, HStack, Image, Stack, Text, VStack , Icon} from '@chakra-ui/react'
+import { Box, Container, Heading, HStack, Image, Stack, Text, VStack, Icon } from '@chakra-ui/react'
 
 const HeroSection = () => {
   return (
@@ -12,8 +12,12 @@ const HeroSection = () => {
       </VStack>
 
       <VStack p={[4, 0]}>
-        <Heading fontSize={30} fontWeight={"semibold"} my={6}>Start developing your cryptocurrency portfolio today</Heading>
-        <Heading fontSize={24} fontWeight={"medium"} >Here are a few advantages why you should go with BitByte.</Heading>
+        <Heading fontSize={30} fontWeight={"semibold"} my={6} textAlign={"center"}>
+          Start developing your cryptocurrency portfolio today
+        </Heading>
+        <Heading fontSize={24} fontWeight={"medium"} textAlign={"center"}>
+          Here are a few advantages why you should go with BitByte.
+        </Heading>
 
         <VStack alignItems={"flex-start"} >
           <Box mt={6} >

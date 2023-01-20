@@ -48,7 +48,6 @@ const DrawerComp = () => {
               <Link to={"/explore"} onClick={() => onClose()}> <Text fontWeight={"semibold"}>Explore</Text></Link>
               <Link to={"/learn"} onClick={() => onClose()}> <Text fontWeight={"semibold"}>Learn</Text></Link>
               <Link to={"/blogs"} onClick={() => onClose()}> <Text fontWeight={"semibold"}>Blogs</Text></Link>
-              <Link to={"/trade"} onClick={() => onClose()}> <Text fontWeight={"semibold"}>Trade</Text></Link>
             </VStack>
           </DrawerBody>
           <DrawerFooter>

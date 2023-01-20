@@ -30,14 +30,14 @@ const Footer = () => {
         <VStack gap={2} w={"290px"}>
           <Heading mb={2} fontSize={22}>Social Links</Heading>
           <HStack gap={4}>
-            <Link><Icon as={BsInstagram}  boxSize={"6"} color={"orange"} /></Link>
-            <Link><Icon as={BsYoutube}  boxSize={"6"} color={"orange"} /></Link>
-            <Link><Icon as={BsTelegram} boxSize={"6"}  color={"orange"} /></Link>
+            <Link><Icon as={BsInstagram}  boxSize={"6"} /></Link>
+            <Link><Icon as={BsYoutube}  boxSize={"6"} /></Link>
+            <Link><Icon as={BsTelegram} boxSize={"6"}  /></Link>
           </HStack>
           <HStack gap={4}>
-            <Link><Icon as={BsDiscord}  boxSize={"6"} color={"orange"} /></Link>
-            <Link><Icon as={BsFacebook} boxSize={"6"}  color={"orange"} /></Link>
-            <Link><Icon as={BsTwitter}  boxSize={"6"} color={"orange"} /></Link>
+            <Link><Icon as={BsDiscord}  boxSize={"6"} /></Link>
+            <Link><Icon as={BsFacebook} boxSize={"6"}  /></Link>
+            <Link><Icon as={BsTwitter}  boxSize={"6"} /></Link>
           </HStack>
           <VStack>
           <Heading mb={2} fontSize={18}>Subscribe to our Newsletter</Heading>

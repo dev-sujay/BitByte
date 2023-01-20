@@ -9,7 +9,17 @@ const PossibilitiesSection = () => {
     return (
         <Box w={["95vw", "90vw"]} mx={"auto"} my={8} py={4}>
             <Heading my={[8, 12]} mx={[3, "auto"]} w={["90vw", "max-content"]} >Explore endless possibilities with BitByte</Heading>
-            <Stack mx={"auto"} flexDir={"row"} flexWrap={"wrap"} gap={4} justifyContent={"space-evenly"} alignItems={"center"} >
+
+            <Stack
+                mx={"auto"}
+                flexDir={"row"}
+                flexWrap={"wrap"}
+                gap={4}
+                justifyContent={"center"}
+                alignItems={"center"}
+                px={8}
+                
+            >
                 <PosibilityCardComp
                     img={nftImg}
                     heading={'Dive into the world of NFTs'}
